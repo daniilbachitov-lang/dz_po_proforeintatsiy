@@ -1,0 +1,115 @@
+      @import url('fonts/main_font.css');
+
+      * {
+          /* Сбрасывание стандартных стилей и добавление шрифтов */
+          margin: 0;
+          font-family: 'StratosSkyeng', sans-serif;
+          background-image: url(./images/background.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+
+      .content {
+          /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+          background-size: cover;
+          min-height: 100vh;
+          /* Пиши свой код ниже */
+          height: 100vh;
+          position: relative;
+      }
+
+      /* Класс для центрирования страницы */
+      .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding-left: calc(50% - 500px);
+          padding-right: calc(50% - 500px);
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          padding-top: 128px;
+          padding-bottom: 128px;
+      }
+
+      .some-element-class {
+          padding: 10px;
+      }
+
+      h2 {
+          font-size: 24px;
+          /* Размер шрифта заголовка второго уровня */
+          text-align: left;
+          /* Выравнивание текста по левому краю */
+      }
+
+      p {
+          font-size: 22px;
+          /* Размер шрифта текста в абзацах */
+      }
+
+      img {
+          width: 45%;
+          /* Полная ширина контейнера */
+          height: auto;
+          /* Автоматическая высота для сохранения пропорций */
+          border-radius: 12px;
+          margin: 16px 0;
+          margin-top: 10px;
+      }
+
+      a {
+          display: block;
+          /* Сделать ссылки блочными */
+          background-color: #894AFF;
+          /* Цвет заднего фона ссылок */
+          color: rgb(195, 0, 255);
+          /* Цвет текста ссылок белый */
+          padding: 11px 30px;
+          /* Внутренний отступ: вертикально 11px, горизонтально 30px */
+          border-radius: 50px;
+          /* Закругление */
+          text-decoration: none;
+          /* Отключить text-decoration */
+          font-size: 38px;
+          /* Размер шрифта 38px */
+          position: absolute;
+          /* Абсолютное позиционирование */
+      }
+
+      /* Добавить position: relative к классу content */
+      .content {
+          position: relative;
+      }
+
+      /* Стили для кнопок */
+      .button-next {
+          top: 0;
+          /* Позиционирование кнопок сверху */
+          left: 0;
+          /* Позиционирование от левого края для кнопки "Следующая страница" */
+      }
+
+      .button-prev {
+          top: 0;
+          /* Позиционирование кнопок сверху */
+          right: 0;
+          /* Позиционирование от правого края для кнопки "Предыдущая страница" */
+      }
+
+      /* Убедитесь, что все кнопки на всех страницах выглядят одинаково и работают правильно */
+      .button {
+          /* Общие стили для всех кнопок */
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      /* Общие стили для всех кнопок */
+
+      /* Класс для расположения элементов в 1 ряд */
+      .in-one-line {
+          display: flex;
+          /* Отступ между элементами */
+          gap: 32px;
+      }
